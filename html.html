@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+	<meta charset="utf-8">
+</head>
+
+<style>
+
+  /*.topline{
+  	position: fixed;
+  	width: 100%;
+  	height: 5%; 
+  	text-align: center;
+  	font-size: 30px;
+  	font-family: sans-serif;
+  	font-weight: 400;
+  	background-color: 	#d3d3d3;
+  	z-index: 30;
+
+  } */
+
+  .leftspacetop{
+  	position: fixed;
+  	top:10px;
+  	width: 200px;
+  	height: 350px; 
+  	overflow: scroll; 
+
+  	font-size: 18px;
+  	font-family: sans-serif;
+  	text-align: left;
+  	border-style: outset;
+  	border-color: #4682b4;
+  	padding: 5px;
+  }
+
+  .leftspacebottom{
+  	position: fixed;
+  	top:380px;
+  	width: 200px;
+  	/*height: 600px; */
+  	/*overflow: scroll; */
+
+  	font-size: 18px;
+  	font-family: sans-serif;
+  	text-align: left;
+  	border-style: outset;
+  	border-color: #4682b4;
+  	padding: 5px;
+
+  }
+
+  .main{
+  	position: relative;
+  	/*top:70px; */ 
+  	left: 230px;
+  	z-index: 10;
+  	
+    }
+
+  h1{
+  	font-family: sans-serif;
+  	font-size: 40px;
+  	font-weight: 500;
+  	color: #4682b4;
+  	
+  }
+
+  h2{
+  	font-family: sans-serif;
+  	color:#4682b4 ;
+  	font-size: 30px;
+  	font-weight: 500;
+  	position: relative;
+  	left: 220px;
+  	display: inline;
+  	border-style: solid;
+  	padding: 3px;
+  	/*background-color: #d3d3d3; */
+  }
+
+  p{
+  	font-size: 21px;
+  	font-family: sans-serif;
+  	border-style: hidden;
+  	width:1000px;
+
+  }
+
+.img{
+	position: relative;
+	left: 300px;
+}
+
+</style>
+
+<body>
+    
+
+
+	<h1 class="main">HTML-Hypertext Markup Language</h1>
+
+	<img src="https://i.pinimg.com/originals/15/d5/4d/15d54d9da034f969e0711f031bf43ea9.gif" width="500px" height="250px"  class="img">
+    <br> <br><br>
+	<div class="leftspacetop">
+		<ul>
+		<li>Topics : </li>
+		<li><a href="#Introduction">Introduction to HTML</a></li>
+		<li><a href="#HTML_Anatomy">HTML Anatomy</a></li>
+		<li><a href="#The_Body">The Body</a></li>
+		<li><a href="#HTML_structure">HTML Structure</a></li>
+		<li><a href="#Headings">Headings</a></li>
+		<li><a href="#Divs">Divs</a></li>
+		<li><a href="#Attributes">Attributes</a></li>
+		<li><a href="#Displaying_text">Displaying Text</a></li>
+		<li><a href="#Styling_text">Styling text</a></li>
+		<li><a href="#Break">Line break</a></li>
+		<li><a href="#Unordered_list">Unordered List</a></li>
+		<li><a href="#Ordered_list">Ordered List</a></li>
+		<li><a href="#Images">Images</a></li>
+		<li><a href="#Image_alts">Image Alt</a></li>
+		<li><a href="#Videos">Videos</a></li>
+
+	</ul>
+	</div>
+
+	<div class="leftspacebottom">
+		<ul>
+			<li>Web safe font styles : </li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="blank">Font-family</a></li>
+			<li>Available CSS COLORS:</li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Colors and codes</a></li>
+		</ul>
+		
+	</div>
+
+	<h2 id="Introduction" class="main">Introdution to HTML</h2>
+	
+	<p class="main">
+		Welcome to the world of code! Every year, millions of learners get started with HTML. Why? HTML is the skeleton of all web pages. It’s often the first language learned by developers, marketers, and designers and is core to front-end development work. If this is your first time touching code, we’re excited for what you’re about to create.<br>
+So what exactly is HTML? HTML provides structure to the content appearing on a website, such as images, text, or videos. Right-click on any page on the internet, choose “Inspect,” and you’ll see HTML in a panel of your screen.<br>
+HTML stands for HyperText Markup Language:<br>
+•	A markup language is a computer language that defines the structure and presentation of raw text.<br>
+•	In HTML, the computer can interpret raw text that is wrapped in HTML elements.<br>
+•	HyperText is text displayed on a computer or device that provides access to other text through links, also known as hyperlinks. You probably clicked on a couple of hyperlinks on your way to this Codecademy course.<br>
+Learning HTML is the first step in creating websites, but even a bit of knowledge can help you inject code snippets into newsletter, blog or website templates. As you continue learning, you can layer HTML with CSS and JavaScript to create visually compelling and dynamic websites. But for now, we’re going to focus on how to add and modify basic content on a page, like text, images, and videos. Don’t worry if the websites look ugly — we’re just getting started.
+
+	</p>
+
+	<h2 id="HTML_Anatomy" class="main">HTML ANATOMY</h2>
+	<p class="main">
+		gram to the right displays an HTML paragraph element. As we can see, the paragraph element is made up of: <br>
+•	An opening tag (< p>)<br>
+•	The content (“Hello World!” text)<br>
+•	A closing tag (< /p>)<br>
+NOTE:There must not be any gap between < and the tag element.If space is present between < and the element name, HTML can not accept the element.(Here, in this site there's a space between < and the name of the element because of few technical errors.) <br>
+A tag and the content between it is called an HTML element. There are many tags that we can use to organize and display text and other types of content, like images.<br>
+Let’s quickly review each part of the element pictured:<br>
+•	HTML element (or simply, element) — a unit of content in an HTML document formed by HTML tags and the text or media it contains.<br>
+•	HTML Tag — the element name, surrounded by an opening (<) and closing (>) angle bracket.<br>
+•	Opening Tag — the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets.<br>
+•	Content — The information (text or other elements) contained between the opening and closing tags of an HTML element.<br>
+•	Closing tag — the second HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside of them, directly after the left angle bracket.<br><br>
+<img src="https://i1.wp.com/tutorial.eyehunts.com/wp-content/uploads/2019/01/What-is-HTML-code-and-HTML-Page-structure-.png?resize=750%2C279&ssl=1" height="200px" width="500px" class="img">
+	</p>
+
+	<h2 id="The_Body" class="main">Body</h2>
+	<p class="main">The Body
+One of the key HTML elements we use to build a webpage is the body element. Only content inside the opening and closing body tags can be displayed to the screen. Here’s what opening and closing body tags look like:<br>
+< body><br><br><br>
+ 
+< /body><br>
+Once the file has a body, many different types of content – including text, images, and buttons – can be added to the body.<br>
+< body><br>
+  < p>What's up, doc?< /p><br>
+< /body><br>
+
+
+</p>
+
+<h2 id="HTML_structure" class="main">HTML Structure</h2>
+<p class="main">
+	HTML is organized as a collection of family tree relationships. As you saw in the last exercise, we placed < p> tags within < body> tags. When an element is contained inside another element, it is considered the child of that element. The child element is said to be nested inside of the parent element. <br>
+< body><br>
+  < p>This paragraph is a child of the body< /p><br>
+< /body><br>
+In the example above, the < p> element is nested inside the < body> element. The < p> element is considered a child of the < body> element, and the < body> element is considered the parent. You can also see that we’ve added two spaces of indentation (using the space bar) for better readability.<br>
+Since there can be multiple levels of nesting, this analogy can be extended to grandchildren, great-grandchildren, and beyond. The relationship between elements and their ancestor and descendent elements is known as hierarchy. <br>
+<img src="https://hackernoon.com/hn-images/1*r4841NK4CLc8xkU9IcR87w.png" height="350px" width="600px" class="img"><br>
+Let’s consider a more complicated example that uses some new tags:<br>
+< body><br>
+  < div><br>
+    < h1>Sibling to p, but also grandchild of body< /h1><br>
+    < p>Sibling to h1, but also grandchild of body< /p><br>
+  < /div><br>
+< /body><br>
+In this example, the < body> element is the parent of the < div> element. Both the < h1> and < p> elements are children of the < div> element. Because the < h1> and < p> elements are at the same level, they are considered siblings and are both grandchildren of the < body> element. <br>
+Understanding HTML hierarchy is important because child elements can inherit behavior and styling from their parent element. You’ll learn more about webpage hierarchy when you start digging into CSS. <br>
+<img src="https://i.gifer.com/WtEG.gif" height="200px" width="400px" class="img">
+
+</p>
+
+<h2 id="Headings" class="main">Headings</h2>
+<p class="main">
+	
+	Headings in HTML are similar to headings in other types of media. For example, in newspapers, large headings are typically used to capture a reader’s attention. Other times, headings are used to describe content, like the title of a movie or an educational article.<br>
+HTML follows a similar pattern. In HTML, there are six different headings, or heading elements. Headings can be used for a variety of purposes, like titling sections, articles, or other forms of content.<br>
+The following is the list of heading elements available in HTML. They are ordered from largest to smallest in size. <br>
+<img src="https://www.schudio.com/wp-content/uploads/2016/10/html-headings.png?x97747" width="400px" height="250px" class="img"><br>
+1.	< h1> — used for main headings. All other smaller headings are used for subheadings. <br>
+2.	< h2><br>
+3.	< h3><br>
+4.	< h4><br>
+5.	< h5><br>
+6.	< h6><br>
+The following example code uses a headline intended to capture a reader’s attention. It uses the largest heading available, the main heading element: <br>
+< h1>BREAKING NEWS < /h1> <br>
+
+</p>
+
+<h2 id="Divs" class="main">Divs</h2>
+<p class="main">
+	One of the most popular elements in HTML is the < div> element. < div> is short for “division” or a container that divides the page into sections. These sections are very useful for grouping elements in your HTML together. <br>
+< body> <br>
+  < div><br>
+    < h1>Why use divs?< /h1> <br>
+    < p>Great for grouping elements!< /p> <br>
+  < /div> <br>
+< /body><br>
+< div>s don’t inherently have a visual representation, but they are very useful when we want to apply custom styles to our HTML elements.
+< div>s allow us to group HTML elements to apply the same styles for all HTML elements inside. We can also style the < div> element as a whole. You can see how this can be done in the Learn CSS course. <br>
+< div>s can contain any text or other HTML elements, such as links, images, or videos. Remember to always add two spaces of indentation when you nest elements inside of < div>s for better readability. <br>
+</p>
+
+<h2 id="Attributes" class="main">Attributes</h2>
+<p class="main">
+	<img src="https://4.bp.blogspot.com/-B5vUzJXNAoE/Vuay2ygsN2I/AAAAAAAAG5o/-qOAVBa3LRkJ0fPWywYzkAcmezRAY2Rxg/s640/html-syntax.png" height="150px" width="500px" class="img"><br>
+	If we want to expand an element’s tag, we can do so using an attribute. Attributes are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling. Attributes are made up of the following two parts: <br>
+•	The name of the attribute <br>
+•	The value of the attribute <br>
+One commonly used attribute is the id. We can use the id attribute to specify different content (such as < div>s) and is really helpful when you use an element more than once. ids have several different purposes in HTML, but for now, we’ll focus on how they can help us identify content on our page. <br>
+When we add an id to a < div>, we place it in the opening tag: <br>
+< div id="intro"> <br>
+  < h1>Introduction< /h1> <br>
+< /div> <br>
+
+
+</p>
+
+<h2 id="Displaying_text" class="main">Displaying text</h2>
+<p class="main">
+	If you want to display text in HTML, you can use a paragraph or span: <br>
+•	Paragraphs (< p>) contain a block of plain text. <br>
+•	< span> contains short pieces of text or other HTML. They are used to separate small pieces of content that are on the same line as other content. <br>
+Take a look at each of these elements in action below: <br>
+< div> <br>
+  < h1>Technology< /h1> <br>
+< /div> <br>
+< div> <br>
+  < p>< span>Self-driving cars< /span> are anticipated to replace up to 2 million jobs over the next two decades.< /p> <br>
+< /div> <br>
+In the example above, there are two different < div>. The second < div> contains a < p> with < span>Self-driving cars< /span>. This < span> element separates “Self-driving cars” from the rest of the text in the paragraph. <br>
+It’s best to use a < span> element when you want to target a specific piece of content that is inline, or on the same line as other text. If you want to divide your content into blocks, it’s better to use a  < div>. <br>
+
+</p>
+
+<h2 id="Styling_text" class="main">Styling text</h2>
+<p class="main">
+	<img src="https://www.htmldog.com/figures/weightStyle.gif" height="250px" width="400px" class="img"><br>
+	You can also style text using HTML tags. The < em> tag emphasizes text, while the < strong> tag highlights important text.
+Later, when you begin to style websites, you will decide how you want browsers to display content within < em> and < strong> tags. Browsers, however, have built-in style sheets that will generally style these tags in the following ways:
+•	The < em> tag will generally render as italic emphasis.
+•	The < strong> will generally render as bold emphasis.
+Take a look at each style in action:
+< p>< strong>The Nile River< /strong> is the < em>longest< /em> river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).<br>
+In this example, the < strong> and < em> tags are used to emphasize the text to produce the following: <br>
+<p class="main">
+	The <strong>Nile River </strong>is the <em>longest</em> river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles). <br>
+As we can see, “The Nile River” is bolded and “longest” is in italics. <br>
+</p>
+
+</p>
+
+<h2 id="Break" class="main">Line Break</h2>
+<p class="main">
+	The spacing between code in an HTML file doesn’t affect the positioning of elements in the browser. If you are interested in modifying the spacing in the browser, you can use HTML’s line break element: < br>. <br>
+The line break element is unique because it is only composed of a starting tag. You can use it anywhere within your HTML code and a line break will be shown in the browser. <br>
+< p>The Nile River is the longest river < br> in the world, measuring over 6,850 < br> kilometers long (approximately 4,260 < br> miles).< /p> <br>
+The code in the example above will result in an output that looks like the following: <br>
+The Nile River is the longest river <br>
+in the world, measuring over 6,850 <br>
+kilometers long (approximately 4,260 <br>
+miles). <br>
+
+</p>
+
+<h2 id="Unordered_list" class="main">Unordered list</h2>
+<p class="main">
+	In addition to organizing text in paragraph form, you can also display content in an easy-to-read list.
+In HTML, you can use an unordered list tag (< ul>) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point. <br>
+The < ul> element should not hold raw text and won’t automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the < li> tag. The < li> or list item tag is used to describe an item in a list. <br>
+< ul> <br>
+  < li>Limes< /li> <br>
+  < li>Tortillas< /li> <br>
+  < li>Chicken< /li> <br>
+< /ul> <br>
+In the example above, the list was created using the < ul> tag and all individual list items were added using < li> tags. <br>
+The output will look like this: <br>
+•	Limes <br>
+•	Tortillas <br>
+•	Chicken <br>
+</p>
+
+<h2 id="Ordered_list" class="main">Ordered_list</h2>
+<p class="main">
+	Ordered lists (< ol>) are like unordered lists, except that each list item is numbered. They are useful when you need to list different steps in a process or rank items for first to last. <br>
+You can create the ordered list with the < ol> tag and then add individual list items to the list using < li> tags. <br>
+< ol> <br>
+  < li>Preheat the oven to 350 degrees.< /li> <br>
+  < li>Mix whole wheat flour, baking soda, and salt.< /li> <br>
+  < li>Cream the butter, sugar in separate bowl.< /li> <br>
+  < li>Add eggs and vanilla extract to bowl.< /li> <br>
+< /ol> <br>
+The output will look like this: <br>
+1.	Preheat the oven to 350 degrees. <br>
+2.	Mix whole wheat flour, baking soda, and salt. <br>
+3.	Cream the butter, sugar in separate bowl. <br>
+4.	Add eggs and vanilla extract to bowl. <br>
+
+</p>
+
+<h2 id="Images" class="main">Images</h2>
+<p class="main">
+	All of the elements you’ve learned about so far (headings, paragraphs, lists, and spans) share one thing in common: they’re composed entirely of text! What if you want to add content to your web page that isn’t composed of text, like images? <br>
+The < img> tag allows you to add an image to a web page. Most elements require both opening and closing tags, but the <img> tag is a self-closing tag. Note that the end of the < img> tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly. <br>
+< img src="image-location.jpg" /> <br>
+The < img> tag has a required attribute called src. The src attribute must be set to the image’s source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored. <br>
+<img src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/07/html-images-df.jpg" height="300px" width="650px" class="img">
+
+</p>
+
+<h2 id="Image_alts" class="main">Image Alt</h2>
+<p class="main">
+	Part of being an exceptional web developer is making your site accessible to users of all backgrounds. In order to make the Web more inclusive, we need to consider what happens when assistive technologies such as screen readers come across image tags. <br>
+The alt attribute, which means alternative text, brings meaning to the images on our sites. The alt attribute can be added to the image tag just like the src attribute. The value of alt should be a description of the image. <br>
+< img src="#" alt="A field of yellow sunflowers" /> <br>
+The alt attribute also serves the following purposes: <br>
+•	If an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. This is made possible by the description you provide in the alt attribute. <<br>
+•	Visually impaired users often browse the web with the aid of screen reading software. When you include the alt attribute, the screen reading software can read the image’s description out loud to the visually impaired user. <br>
+•	The alt attribute also plays a role in Search Engine Optimization (SEO), because search engines cannot “see” the images on websites as they crawl the internet. Having descriptive alt attributes can improve the ranking of your site. <br>
+If the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should be left empty. <br>
+
+</p>
+
+<h2 id="Videos" class="main">Videos</h2>
+<p class="main">
+	In addition to images, HTML also supports displaying videos. Like the < img> tag, the < video> tag requires a src attribute with a link to the video source. Unlike the < img> tag however, the < video> element requires an opening and a closing tag. <br>
+< video src="myVideo.mp4" width="320" height="240" controls> <br>
+  Video not supported <br>
+< /video> <br>
+In this example, the video source (src) is myVideo.mp4 The source can be a video file that is hosted alongside your webpage, or a URL that points to a video file hosted on another webpage. <br>
+After the src attribute, the width and height attributes are used to set the size of the video displayed in the browser. The controls attribute instructs the browser to include basic video controls: pause, play and skip. <br>
+The text, “Video not supported”, between the opening and closing video tags will only be displayed if the browser is unable to load the video. <br>
+
+<img src="https://i0.wp.com/codemyui.com/wp-content/uploads/2018/07/Play-Icon-to-Video-Animation-on-Click.gif?fit=880%2C400&ssl=1" height="250px" width="450px" class="img">
+
+</p>
+
+
+
+</body>
+</html>
